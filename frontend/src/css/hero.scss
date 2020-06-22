@@ -1,0 +1,56 @@
+/******************
+Hero - INDEX
+******************/
+.outher {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+    url(../assets/hero-news-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+  h1 {
+    color: white;
+    font-size: 3rem;
+  }
+}
+/******************
+Hero - CAMPS
+******************/
+.heroCampsOuther {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+    url(../assets/hero-camps-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+/******************
+Hero - LOGIN
+******************/
+.heroLoginOuther {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+    url(../assets/hero-login-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}
+/******************
+Hero - TICKET
+******************/
+.heroTicketOuther {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
+    url(../assets/hero-ticket-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50vh;
+}

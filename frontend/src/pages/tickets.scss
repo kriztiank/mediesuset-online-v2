@@ -1,0 +1,85 @@
+.contact__header {
+  background-color: white;
+}
+
+.contact__section {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1.25rem;
+}
+
+.contact__form {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 60px;
+  margin: 60px 0;
+}
+
+.contact__form h1 {
+  padding: 0.8rem;
+  color: black;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 10px;
+}
+
+.field__hidden {
+  display: none;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: black;
+  border: 1px solid black;
+}
+
+.field input {
+  height: 40px;
+}
+
+.field label {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-bottom: 1px solid #f06666;
+}
+
+.submit {
+  text-align: right;
+  padding: 0;
+  margin: 30px 0;
+}
+
+@media screen and (max-width: 800px) {
+  .contact__form {
+background-color: red;
+  }
+}
+
+.contact__thanks {
+  color: black;
+  height: 580px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
