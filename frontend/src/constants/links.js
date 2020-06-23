@@ -33,7 +33,7 @@ const data = [
     url: "/login/",
   },
   {
-    id: 6,
+    id: 7,
     text: "TEST",
     url: "/blog/",
   },
