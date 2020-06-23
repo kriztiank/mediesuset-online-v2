@@ -3,7 +3,7 @@ import Layout from "../components/Layout"
 // import { Link } from "gatsby"
 import SEO from "../components/SEO"
 import HeroTickets from "../components/HeroTickets"
-import './tickets.scss'
+import "./tickets.scss"
 
 const ticketsPage = () => {
   return (
@@ -11,37 +11,61 @@ const ticketsPage = () => {
       <SEO title="tickets" />
       {/* <Tickets title="KØB BILLET" /> */}
       <HeroTickets />
-      <header className='contact__header'>
-        <section className='contact__section'>
-          <div className='contact__form'>
-            <h1>KØB BILLET</h1>
+      <main>
+        <div class="main-inner">
+          <form class="main-form">
+            <p>Reserver Camp pladser. (Vælg område og forsendelsesmetode)</p>
 
-            <form method='post' name='contact' action='/thanks' data-netlify='true' netlify-honeypot='bot'>
-              <input type='hidden' name='form-name' value='contact' />
-              <div className='field__hidden'>
-                <label htmlFor="bot">Don't fill this out, human</label>
-                <input name='bot' />
-              </div>
-              <div className='field'>
-                <label htmlFor="name">Name</label>
-                <input type='text' name='name' />
-              </div>
-              <div className='field'>
-                <label htmlFor="email">Email</label>
-                <input type='text' name='email' />
-              </div>
-              <div className='field'>
-                <label htmlFor="message">Message</label>
-                <textarea name='message' rows='6'></textarea>
-              </div>
-              <div className='submit'>
-                <button type='submit' className='btn__grey'>Send</button>
-              </div>
-            </form>
+            <label htmlFor="name">Navn:</label>
+            <input
+              type="text"
+              id="name_id"
+              className="name-field"
+              placeholder="Indtast dit navn"
+            />
+            {/* adresse, postnummer, by */}
 
-          </div>
-        </section>
-      </header>
+            <label htmlFor="email">Email/brugernavn:</label>
+            <input
+              type="text"
+              id="email_id"
+              className="email-field"
+              placeholder="Indtast din email"
+            />
+            {/* adgangskode, gentag adgangskode */}
+
+            <div class="radio-buttons">
+              <input type="radio" name="coding" value="Yes" id="like" />{" "}
+              <span class="radio-text"> Jeg ønsker billetterne tilsendt</span>
+              <input type="radio" name="coding" value="No" id="dislike" />{" "}
+              <span class="radio-text"> Jeg udskriver billetterne selv</span>
+            </div>
+
+            <div>
+              <select name="gender" id="gender" class="select-box">
+                <option value="">Vælg område:</option>
+                <option value="f">Camp Colorit</option>
+                <option value="m">Camp Kultunaut</option>
+              </select>
+            </div>
+
+            {/* <button type='submit'>Send</button> */}
+            <div class="buttons">
+              <div class="button">
+                <button type="reset" class="btn">
+                  Ryd Felter
+                </button>
+              </div>
+
+              <div class="button">
+                <button type="button" id="send" class="btn">
+                  Send Formular
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
     </Layout>
   )
 }

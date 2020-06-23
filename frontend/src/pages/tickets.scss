@@ -1,85 +1,83 @@
-.contact__header {
-  background-color: white;
+/*******************************
+ tickets.js - main
+*******************************/
+main {
+  padding: 5rem;
+  margin-top: 40px;
 }
-
-.contact__section {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.main-inner {
   max-width: 1200px;
   margin: auto;
-  padding: 1.25rem;
+  /* padding y / padding x */
+  padding: 0 1.25rem;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 50% auto;
 }
 
-.contact__form {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 60px;
-  margin: 60px 0;
-}
-
-.contact__form h1 {
-  padding: 0.8rem;
+/*******************************
+ form
+*******************************/
+::placeholder {
   color: black;
-  text-align: center;
 }
-
-.field {
-  margin-bottom: 10px;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-.field__hidden {
-  display: none;
-}
-
-.field input,
-.field textarea {
-  width: 100%;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  font-size: 14px;
-  line-height: 24px;
+.name-field,
+.email-field,
+.phone-field,
+.select-box {
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: 300;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
 }
-
-.field input {
-  height: 40px;
-}
-
-.field label {
+.radio-buttons {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 300;
+  color: black;
+  padding: 0.5rem;
   font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: black;
-}
-
-.field input:focus,
-.field textarea:focus {
-  border-bottom: 1px solid #f06666;
-}
-
-.submit {
-  text-align: right;
-  padding: 0;
-  margin: 30px 0;
-}
-
-@media screen and (max-width: 800px) {
-  .contact__form {
-background-color: red;
-  }
-}
-
-.contact__thanks {
-  color: black;
-  height: 580px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.radio-text {
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.error {
+  outline-color: red;
+}
+/*******************************
+ buttons
+*******************************/
+/* Button placement */
+.buttons {
+  color: black;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.btn {
+  /* Default button styles removed */
+  all: unset;
+  /* padding y / padding x */
+  padding: 5px 30px;
   text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  width: 95px;
+  border: 2px solid black;
 }
