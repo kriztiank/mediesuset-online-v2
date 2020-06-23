@@ -10,7 +10,6 @@ const Artists = ({ artists, title }) => {
       {/* title is passed as a prop from index.js */}
       <Title title={title} />
       <header className="grid-container-lineup">
-
         <Link to="/artists" className="grid white">A-Å</Link>
         <Link to="/redStage" className="grid white">RØD SCENE</Link>
         <Link to="/blueStage" className="grid white">BLÅ SCENE</Link>
