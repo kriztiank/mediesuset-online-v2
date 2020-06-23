@@ -4,8 +4,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import HeroTickets from "../components/HeroTickets"
 import Validation from "../components/Validation"
-
-import "./tickets.scss"
+import Styles from './tickets.module.scss';
 
 const ticketsPage = () => {
   return (
@@ -14,15 +13,15 @@ const ticketsPage = () => {
       {/* <Tickets title="KØB BILLET" /> */}
       <HeroTickets />
       <main>
-        <div class="main-inner">
-          <form class="main-form">
+        <div className={Styles.mainInner}>
+          <form className={Styles.mainForm}>
             <p>Reserver Camp pladser. (Vælg område og forsendelsesmetode)</p>
 
             <label htmlFor="name">Navn:</label>
             <input
               type="text"
               id="name_id"
-              className="name-field"
+              className={Styles.nameField}
               placeholder="Indtast dit navn"
             />
             {/* adresse, postnummer, by */}
@@ -31,20 +30,20 @@ const ticketsPage = () => {
             <input
               type="text"
               id="email_id"
-              className="email-field"
+              className={Styles.emailField}
               placeholder="Indtast din email"
             />
             {/* adgangskode, gentag adgangskode */}
 
-            <div class="radio-buttons">
+            <div className={Styles.radioButtons}>
               <input type="radio" name="coding" value="Yes" id="like" />{" "}
-              <span class="radio-text"> Jeg ønsker billetterne tilsendt</span>
+              <span className={Styles.radioText}> Jeg ønsker billetterne tilsendt</span>
               <input type="radio" name="coding" value="No" id="dislike" />{" "}
-              <span class="radio-text"> Jeg udskriver billetterne selv</span>
+              <span className={Styles.radioText}> Jeg udskriver billetterne selv</span>
             </div>
 
             <div>
-              <select name="gender" id="gender" class="select-box">
+              <select name="gender" id="gender" className={Styles.selectBox}>
                 <option value="">Vælg område:</option>
                 <option value="f">Camp Colorit</option>
                 <option value="m">Camp Kultunaut</option>
@@ -52,15 +51,15 @@ const ticketsPage = () => {
             </div>
 
             {/* <button type='submit'>Send</button> */}
-            <div class="buttons">
-              <div class="button">
-                <button type="reset" class="btn">
+            <div className={Styles.buttons}>
+              <div className={Styles.button}>
+                <button type="reset" className={Styles.btn}>
                   Ryd Felter
                 </button>
               </div>
 
-              <div class="button">
-                <button type="button" id="send" class="btn">
+              <div className={Styles.button}>
+                <button type="button" id="send" className={Styles.btn}>
                   Send Formular
                 </button>
               </div>
