@@ -5,7 +5,7 @@
 **Clone the repository and install dependencies**
 
 ```bash
-git clone https://github.com/kriztiank/mediesuset-online.git
+git clone https://github.com/kriztiank/mediesuset-online-v2.git
 ```
 
 ### Start the backend server
