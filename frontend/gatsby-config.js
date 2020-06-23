@@ -7,7 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: "Mediesuset",
-    description: "Mediesusets 4-5-6-7.JULI 2020",
+    description: "Mediesuset 4-5-6-7.JULI 2020",
     author: "@kriztiank",
     siteUrl: "https://mediesuset-online.netlify.app/",
     // siteUrl: "https://yoursite.netlify.app",
