@@ -43,64 +43,49 @@
   grid-gap: 40;
   grid-template-columns: auto auto auto auto auto;
   grid-template-rows: 80px;
-  // color: white;
   margin-bottom: 40px;
   cursor: pointer;
 
   // A-Å
-  div:nth-child(1) {
+  a:nth-child(1) {
     background: #292929;
+    color: white;
   }
-  div:nth-child(1):hover {
+  a:nth-child(1):hover {
     background: #aaaaaa;
   }
   // RØD SCENE
-  div:nth-child(2) {
+  a:nth-child(2) {
     background: #292929;
-    .white {
-      color: white;
-    }
+    color: white;
   }
-  div:nth-child(2):hover {
+  a:nth-child(2):hover {
     background: #ac324c;
   }
   // BLÅ SCENE
-  div:nth-child(3) {
+  a:nth-child(3) {
     background: #292929;
-    .white {
-      color: white;
-    }
+    color: white;
   }
-  div:nth-child(3):hover {
+  a:nth-child(3):hover {
     background: #395f98;
   }
   // GRØN SCENE
-  div:nth-child(4) {
+  a:nth-child(4) {
     background: #292929;
-    .white {
-      color: white;
-    }
+    color: white;
   }
-  div:nth-child(4):hover {
+  a:nth-child(4):hover {
     background: #638b3f;
   }
   // LILLA SCENE
-  div:nth-child(5) {
+  a:nth-child(5) {
     background: #292929;
-    .white {
-      color: white;
-    }
+    color: white;
   }
-  div:nth-child(5):hover {
+  a:nth-child(5):hover {
     background: #88267f;
   }
-}
-
-/**ALL DIVS IN CONTAINER**/
-.grid-container .grid {
-  // border-bottom: 1px solid #fff;
-  // background: #e8e8e8;
-
 }
 
 /**ALIGNMENT**/
