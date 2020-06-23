@@ -3,6 +3,8 @@ import Layout from "../components/Layout"
 // import { Link } from "gatsby"
 import SEO from "../components/SEO"
 import HeroTickets from "../components/HeroTickets"
+import Validation from "../components/Validation"
+
 import "./tickets.scss"
 
 const ticketsPage = () => {
