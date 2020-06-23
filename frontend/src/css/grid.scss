@@ -1,13 +1,10 @@
-﻿.white {
-  color: white;
-}
-/**GRID CONTAINER STAGES**/
+﻿/**GRID CONTAINER STAGES**/
 .grid-container-stages {
   display: grid;
   grid-gap: 40;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: 80px;
-  color: black;
+  color: white;
   margin-bottom: 40px;
   cursor: pointer;
 
@@ -46,7 +43,7 @@
   grid-gap: 40;
   grid-template-columns: auto auto auto auto auto;
   grid-template-rows: 80px;
-  color: black;
+  // color: white;
   margin-bottom: 40px;
   cursor: pointer;
 
@@ -60,6 +57,9 @@
   // RØD SCENE
   div:nth-child(2) {
     background: #292929;
+    .white {
+      color: white;
+    }
   }
   div:nth-child(2):hover {
     background: #ac324c;
@@ -67,6 +67,9 @@
   // BLÅ SCENE
   div:nth-child(3) {
     background: #292929;
+    .white {
+      color: white;
+    }
   }
   div:nth-child(3):hover {
     background: #395f98;
@@ -74,6 +77,9 @@
   // GRØN SCENE
   div:nth-child(4) {
     background: #292929;
+    .white {
+      color: white;
+    }
   }
   div:nth-child(4):hover {
     background: #638b3f;
@@ -81,6 +87,9 @@
   // LILLA SCENE
   div:nth-child(5) {
     background: #292929;
+    .white {
+      color: white;
+    }
   }
   div:nth-child(5):hover {
     background: #88267f;
@@ -89,8 +98,9 @@
 
 /**ALL DIVS IN CONTAINER**/
 .grid-container .grid {
-  border-bottom: 1px solid #fff;
-  background: #e8e8e8;
+  // border-bottom: 1px solid #fff;
+  // background: #e8e8e8;
+
 }
 
 /**ALIGNMENT**/

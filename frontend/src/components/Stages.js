@@ -9,11 +9,11 @@ const Stages = ({ stages, title }) => {
     <section className="section section-center">
       {/* title is passed as a prop from index.js */}
       <Title title={title} />
-      <header class="grid-container-stages">
-        <div class="grid white">ONSDAG</div>
-        <div class="grid white">TORSDAG</div>
-        <div class="grid white">FREDAG</div>
-        <div class="grid white">LØRDAG</div>
+      <header className="grid-container-stages">
+        <div className="grid">ONSDAG</div>
+        <div className="grid">TORSDAG</div>
+        <div className="grid">FREDAG</div>
+        <div className="grid">LØRDAG</div>
       </header>
 
       <div className="stages-center">
