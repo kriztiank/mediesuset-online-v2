@@ -7,7 +7,7 @@ import SEO from "../components/SEO"
 // ...GatsbyImageSharpFluid
 
 // with page query you can access graphql in the data object
-const About = ({
+const aboutPage = ({
   data: {
     about: { nodes },
   },
@@ -52,4 +52,4 @@ export const query = graphql`
   }
 `
 
-export default About
+export default aboutPage
